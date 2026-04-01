@@ -176,6 +176,7 @@ func InnerText(n *html.Node) string {
 		switch n.Type {
 		case html.TextNode:
 			b.WriteString(n.Data)
+			b.WriteString("\n")
 			return
 		case html.CommentNode:
 			return
